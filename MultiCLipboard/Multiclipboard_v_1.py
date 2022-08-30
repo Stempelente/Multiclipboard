@@ -12,6 +12,7 @@ global BButton
 
 sg.theme("DefaultNoMoreNagging")
 
+
 def fadeaway():
     USE_FADE_IN = True
     WIN_MARGIN = 60
@@ -95,7 +96,7 @@ def ende():
             break
 
 def mcd(ersterhotkey, zweiterhotkey, BButton):
-
+    
     mcd_layout = [[sg.Text("Speicher für: " + ersterhotkey), sg.InputText()]
                 ]
 
@@ -134,15 +135,14 @@ def mcd(ersterhotkey, zweiterhotkey, BButton):
 
 def zweiterButtonP(ersterhotkey, zweiterhotkey, BButton):
     zweiterButtonP_layout = [[sg.Text("Du hast " + zweiterhotkey + " gedrückt! Stimmt das?")],
-                        [sg.Push(), sg.Button("Ja"), sg.Button("Nein"),sg.Push()]
+                            [sg.Push(), sg.Button("Ja"), sg.Button("Nein"),sg.Push()]
     ]
     zweiterButtonP_window = sg.Window("Multiclipboardduck", zweiterButtonP_layout)
 
     while True:
         event, values = zweiterButtonP_window.read()
-        if event == "Ja":
+        if event == "Ja":                
             zweiterButtonP_window.close()
-            sg.Popup("Bitte Drücke zur Bestätigung die Hotkeys erneut!")
             mcd(ersterhotkey, zweiterhotkey, BButton)
             break
         if event == "Nein":
@@ -168,8 +168,6 @@ def zweiterButton(ersterhotkey):
             break
         if event == "Zweiten Hotkey festlegen":
             zweiterhotkey = kb.read_hotkey()
-            keyboard.press(Key.ctrl)
-            keyboard.press(Key.shift)
             zweiterButton_window.close()
             zweiterButtonP(ersterhotkey, zweiterhotkey, BButton)
             break
@@ -192,7 +190,6 @@ def ersterButton(ersterhotkey):
 
         if event == "Ja":
             zweiButtons_window.close()
-            sg.Popup("Bitte Drücke zur Bestätigung die Hotkeys erneut!")
             zweiterButton(ersterhotkey)
             break
         if event == "Nein":
@@ -224,8 +221,7 @@ def greetw():
 
         if event == "-Button1-":
             ersterhotkey = kb.read_hotkey()
-            keyboard.press(Key.ctrl)
-            keyboard.press(Key.shift)
+
             greetw_window.close()
             ersterButton(ersterhotkey)
             break
