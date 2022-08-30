@@ -1,6 +1,6 @@
 Simple Multiclipboard
 
-Bei meiner Thesis war/bin ich davon genevrt gewesen nur auf einen Speicherplatz beim Kopieren von Texten zu haben (Strg + C -> nur ein Halter für den Text)
+Bei meiner Thesis war/bin ich davon genervt gewesen nur auf einen Speicherplatz beim Kopieren von Texten zu haben (Strg + C -> nur ein Halter für den Text)
 
 Deshalb kleines Tool geschrieben
 
