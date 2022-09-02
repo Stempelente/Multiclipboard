@@ -2,9 +2,9 @@
 
 Simple Multiclipboard
 
-Bei meiner Thesis war/bin ich davon genervt gewesen nur auf einen Speicherplatz beim Kopieren von Texten zu haben (Strg + C -> nur ein Halter für den Text)
+Bei meiner Thesis war/bin ich davon genervt gewesen nur einen Speicherslot fürs Kopieren von Texten zu haben (Strg + C)
 
-Deshalb kleines Tool geschrieben
+Deshalb kleines Tool geschrieben -> Hotkey drücken um vorher abgespeicherten Text in den Copy Speicherslot reinzuladen
 
 -> Simple Version ist mit vordefinierten Hotkeys
 
