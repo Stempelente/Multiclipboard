@@ -10,7 +10,7 @@ keyboard = Controller()
 
 global BButton
 
-sg.theme("DefaultNoMoreNagging")
+sg.theme("None")
 
 
 def fadeaway():
